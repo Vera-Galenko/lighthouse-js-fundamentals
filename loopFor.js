@@ -63,3 +63,10 @@ var laugh = function(word){
 }/* finish the function expression */
 
 console.log(laugh(3));
+
+var cry = function newFunction(){
+  var sound = "boohoo!";
+  return sound;
+}
+
+console.log(cry());
