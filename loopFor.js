@@ -70,3 +70,26 @@ var cry = function newFunction(){
 }
 
 console.log(cry());
+
+function emotions(myString, myFunc) {
+  console.log("I am " + myString + ", " + myFunc(2));
+}
+
+emotions ("happy", function(num) {
+  var sound = ""; // Local variable
+  //Iterate
+  for (var i = 0 ; i < num ; i++) {
+      sound = sound + "ha" ;  
+  }
+  sound = sound +"!"; 
+  return sound; 
+});
+
+function movies(messageFunction, name) {
+  messageFunction(name);
+}
+
+// call the movies function, pass in the function and name of movie
+movies(function displayFavorite(movieName) {
+  console.log("My favorite movie is " + movieName);
+}, "Finding Nemo");
